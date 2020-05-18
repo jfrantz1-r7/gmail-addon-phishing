@@ -1,0 +1,29 @@
+{
+    "timeZone": "America/New_York",
+    "dependencies": {
+      "enabledAdvancedServices": [{
+        "userSymbol": "Gmail",
+        "serviceId": "gmail",
+        "version": "v1"
+      }]
+    },
+    "webapp": {
+      "access": "DOMAIN",
+      "executeAs": "USER_DEPLOYING"
+    },
+    "oauthScopes": [ 
+        "https://mail.google.com/", 
+        "https://www.googleapis.com/auth/gmail.addons.execute"
+    ],
+    "gmail": {
+      "name": "Your company name here",
+      "logoUrl": "https://image/of/a/phishing_hook.png",
+      "contextualTriggers": [{
+        "unconditional": {
+        },
+        "onTriggerFunction": "getContextualAddOn"
+      }],
+      "primaryColor": "#E85E26",
+      "secondaryColor": "#E85E26"
+    }
+}
